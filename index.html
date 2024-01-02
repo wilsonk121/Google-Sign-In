@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-signin-client_id" content="23083204330-q5tjuv9ktcpf0nbojus1blhg2kkli0i4.apps.googleusercontent.com">
+    <title>Sign With</title>
+    <link rel="shortcut icon" href="LogNow.png" type="image/x-icon">
+</head>
+<body>
+<section class="container">
+    <div id="g_id_onload"
+         data-client_id="23083204330-q5tjuv9ktcpf0nbojus1blhg2kkli0i4.apps.googleusercontent.com"
+         data-context="signup"
+         data-ux_mode="popup"
+         data-callback="handleCredentialResponse"
+         data-auto_prompt="false">
+    </div>
+
+    <div id="sign" class="g_id_signin"
+         data-type="standard"
+         data-shape="pill"
+         data-theme="filled"
+         data-text="signin_with"
+         data-size="large"
+         data-logo_alignment="left">
+    </div>
+
+    <div id="info" style="width: 18rem;">
+        <img id="photo" alt="Your Image">
+        <div>
+            <h5 id="fullname"></h5>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li>ID: <span id="id_num"></span></li>
+            <li>First Name: <span id="first"></span></li>
+            <li>Last Name: <span id="last"></span></li>
+            <li>Email: <span id="email"></span></li>
+        </ul>
+    </div>
+
+    <button id="out">
+        Sign out
+    </button>
+</section>
+<!-- google Library -->
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+
+<script src="script.js"></script>
+</body>
+</html>
